@@ -12,7 +12,8 @@ if __name__ == '__main__':
     user_data = user_res.json()
     username = user_data.get('username')
 
-    url_todos = 'https://jsonplaceholder.typicode.com/users/{}/todos'.format(user_id)
+    url_todos = 'https://jsonplaceholder.typicode.com/users/{}/todos'
+    .format(user_id)
     todos_response = requests.get(url_todos)
     todos = todos_response.json()
 
